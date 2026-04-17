@@ -5,11 +5,9 @@ function viewImage(...sources) {
     container.innerHTML = '';
     
     sources.forEach(src => {
-        // Crear el contenedor para la imagen y el sello
         const wrapper = document.createElement('div');
         wrapper.className = 'modal-wrapper';
 
-        // Crear el sello de verificado
         const badge = document.createElement('div');
         badge.className = 'badge-verify';
         badge.innerHTML = '<i class="fas fa-check-circle"></i> VERIFICADO 2026';
@@ -30,8 +28,17 @@ function closeModal() {
     document.getElementById('imgModal').style.display = 'none';
 }
 
+function openInfoModal() {
+    document.getElementById('infoModal').style.display = 'flex';
+}
+
+function closeInfoModal() {
+    document.getElementById('infoModal').style.display = 'none';
+}
+
 document.addEventListener('keydown', function(e) {
     if (e.key === "Escape") {
         closeModal();
+        closeInfoModal();
     }
 });
