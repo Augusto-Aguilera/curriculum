@@ -24,7 +24,8 @@
         <p class="hero-subtitle">Técnico Operativo Especialista en Mantenimiento Industrial, Soldadura Avanzada (UPRO) y Instrumentación Industrial. Perfil híbrido enfocado en la optimización de procesos operativos.</p>
         <div class="hero-btns">
             <a href="#experiencia" class="btn btn-gold"><i class="fas fa-tools"></i> Ver Experiencia</a>
-            <a href="#evidencia" class="btn btn-outline"><i class="fas fa-file-contract"></i> Papeles al Día</a>
+            <a href="#evidencia" class="btn btn-gold"><i class="fas fa-file-contract"></i> Papeles al Día</a>
+            <button onclick="openInfoModal()" class="btn btn-gold"><i class="fas fa-user-tie"></i> Sobre Mí</button>
         </div>
         <a href="#experiencia" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
     </header>
@@ -66,12 +67,14 @@
         </div>
         <div class="skills-container">
             <span class="skill-tag">Válvulas Industriales</span>
-            <span class="skill-tag">Soldadura MIG/TIG</span>
-            <span class="skill-tag">Tornería de Precisión</span>
+            <span class="skill-tag">Soldadura SMAW/MIG/TIG</span>
             <span class="skill-tag">Instrumentación</span>
-            <span class="skill-tag">Lectura de Planos</span>
-            <span class="skill-tag">Seguridad Industrial</span>
+            <span class="skill-tag">Obra Civil</span>
+            <span class="skill-tag">Mantenimiento Industrial</span>
             <span class="skill-tag">JavaScript (Habilidad Híbrida)</span>
+            <span class="skill-tag">Desarrollo Web (Frontend)</span>
+            <span class="skill-tag">Despliegue y Gestión (Vercel)</span>
+            <span class="skill-tag">Visión de Optimización</span>
         </div>
     </section>
 
@@ -113,19 +116,19 @@
         </div>
         <p style="color:var(--text-muted); font-weight:300; margin-bottom:30px;">Selectoras: Hagan clic para descargar y verificar la documentación original.</p>
         <div class="evidence-grid">
-            <div onclick="viewImage('img/titulosoldador.png')" class="evidence-card">
+            <div onclick="viewImage('img/titulosoldador.png')" class="evidence-card btn-gold">
                 <i class="fas fa-graduation-cap evidence-icon"></i>
                 <span class="evidence-title">Diploma Soldador UPRO</span>
             </div>
-            <div onclick="viewImage('img/cuil.png')" class="evidence-card">
+            <div onclick="viewImage('img/cuil.png')" class="evidence-card btn-gold">
                 <i class="fas fa-id-card evidence-icon"></i>
                 <span class="evidence-title">Constancia CUIL</span>
             </div>
-            <div onclick="viewImage('img/antecedentes.png')" class="evidence-card">
+            <div onclick="viewImage('img/antecedentes.png')" class="evidence-card btn-gold">
                 <i class="fas fa-user-shield evidence-icon"></i>
                 <span class="evidence-title">Antecedentes Penales</span>
             </div>
-            <div onclick="viewImage('img/analitico.png', 'img/analitico2.png')" class="evidence-card">
+            <div onclick="viewImage('img/analitico.png', 'img/analitico2.png')" class="evidence-card btn-gold">
                 <i class="fas fa-file-invoice evidence-icon"></i>
                 <span class="evidence-title">Certificado de Estudios</span>
             </div>
@@ -154,11 +157,55 @@
         </div>
     </section>
 
-    <footer class="footer">&copy; 2026 PATRIC SOFT ® — INDUSTRIAL OPERATIVE VERIFIED</footer>
+    <footer class="footer">
+        <div style="margin-bottom: 20px;">
+            <a href="https://wa.me/5492657521775" target="_blank" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+            </a>
+        </div>
+        &copy; 2026 PATRIC SOFT ® — INDUSTRIAL OPERATIVE VERIFIED
+    </footer>
 
     <div id="imgModal" class="modal-viewer" onclick="closeModal()">
         <span class="modal-close" onclick="closeModal()">&times;</span>
         <div id="modalContainer" class="modal-container" onclick="event.stopPropagation()"></div>
+    </div>
+
+    <div id="infoModal" class="modal-viewer" onclick="closeInfoModal()">
+        <span class="modal-close" onclick="closeInfoModal()">&times;</span>
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <div class="info-card">
+                <h3 style="color:var(--gold); margin-bottom:20px; text-transform:uppercase; letter-spacing:2px; border-bottom: 2px solid var(--gold); padding-bottom: 10px;">Información Personal</h3>
+                <p><strong>Nombre completo:</strong> Patric Augusto Aguilera</p>
+                <p><strong>Edad:</strong> 34 Años</p>
+                <p><strong>Direccion:</strong>Guemes 468</p>
+                <p><strong>Nacionalidad:</strong> Argentino</p>
+                <p><strong>Estado Civil:</strong> Soltero</p>
+                <p><strong>Estudios Primarios:</strong> COMPLETO</p>
+                <p><strong>Estudios Secundarios:</strong> COMPLETO</p>
+                <p><strong>Habilidades:</strong>
+                    <li><ul>Liderazgo</ul></li>
+                    <li><ul>Rapido Aprendizaje</ul></li>
+                    <li><ul>Buena Comunicacion</ul></li>
+                    <li><ul>Trabajo en Equipo</ul></li>
+                    <li><ul>Conocimientos Varios</ul></li>
+                </p>
+                <p><strong>Idiomas:</strong>
+                <li><ul>Español Nativo</ul></li>
+                <li><ul>Igles Basico</ul></li>
+                </p>
+                <p><strong>OBJETIVOS :</strong>
+                <li><ul>Objetivo profesional enfocado en el area de mantenimiento, con solidos conocimientos en la prevencion y reparacion de equipos , asi como en la optimizacion de procesos.
+                    Busco contribuir a la eficiencia operativa y a la seguridad de la infraestructura, aplicando habilidades tecnicas y un enfoque proactivo para resolver problemas.
+                </ul></li>
+                </p>
+                <p><strong>RESUMEN :</strong>    
+                <li><ul>Profesional con solida experiencia en mantenimiento general de planta y roles operativos en diversas industrias, incluyendo la construccion.</ul></li>
+                <li><ul>He ejercido como propietariode un negocio, desarrollando habilidades en gestion y liderazgo.</ul></li>
+
+                </p>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
